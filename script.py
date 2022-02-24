@@ -25,10 +25,40 @@ print("Make love not war")
 # print(user_name + ", your age is " + str(user_age) )
 # print(f"{user_name}, your age is {user_age}")
 
-user_name=input("Введите имя: ")
-user_surname=input("Введите фамилию: ")
-date_a=input("Введите год поступления: ")
-gy = int(date_a) + 2
-print(f"{user_surname} {user_name}, год Вашего окончания {str(gy)}")
+# # user_name=input("Введите имя: ")
+# # user_surname=input("Введите фамилию: ")
+# # date_a=input("Введите год поступления: ")
+# # gy = int(date_a) + 2
+# # print(f"{user_surname} {user_name}, год Вашего окончания {str(gy)}")
+
+
+# user_info=("Enter your name, lastname, year using comma: ").split(",")
+# print(user_info[])
+
+
+# ages = [10, 20, 30, 40]
+
+# for z in ages:
+#     print(z*2)
+
+
+numbers = input("Enter numbers using comma: ").split(",")
+
+summ=0
+for z in numbers:
+    summ=summ+int(z)
+    
+print(summ)
+
+
+numbers = input("Enter numbers using comma: ").split(",")
+
+summ=0
+for z in numbers:
+    summ=summ+int(z)**3
+    
+print(summ)
+
+
 
 
