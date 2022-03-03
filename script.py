@@ -53,11 +53,11 @@ print(summ)
 
 numbers = input("Enter numbers using comma: ").split(",")
 
-summ=0
+s=0
 for z in numbers:
-    summ=summ+int(z)**3
+    s=s+int(z)**3
     
-print(summ)
+print(s)
 
 
 
