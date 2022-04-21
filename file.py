@@ -83,18 +83,18 @@
 #         print(customer)
 
 #10 если у кого-то еще нет покупок
-# customers=[]
-#
-# with open("text.txt", 'r+') as f:
-#     data=f.readlines()
-#     for line in data:
-#         user=line.split(',')
-#        
-#         customer={} 
-#         customer["name"]=user[0]
-#         customer["age"]=int(user[1].split("\n")[0])
-#         customer["products"]=user[2:] #начиная со значения с индексом 2
-#
-#         customers.append(customer)
-#         print(customer)
+customers=[]
+
+with open("text.txt", 'r+') as f:
+    data=f.readlines()
+    for line in data:
+        user=line.split(',')
+       
+        customer={} 
+        customer["name"]=user[0]
+        customer["age"]=int(user[1].split("\n")[0])
+        customer["products"]=user[2:] #начиная со значения с индексом 2
+
+        customers.append(customer)
+        print(customer)
 
