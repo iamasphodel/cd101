@@ -1,0 +1,4 @@
+Anne,23,water;fish;cola
+Alice,25,gum;bread
+Bob,20,milk
+Sam,16,
