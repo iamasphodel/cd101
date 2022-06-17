@@ -6,20 +6,20 @@ def generation_id(count):
     return rnd_id
 
 
-customers = [{"id": "5555", "name": "Anne","age":21, "prods": ["water"]}, {"id": "12121", "name": "Alice","prods": ["cola"]}]
+customers = [{"id": "55555", "name": "Anne","age":21, "prods": ["water"]}, {"id": "656864", "name": "Alice","products": ["sugar"]}]
 g = input('Do you want to buy something? ')
-while g == 'Yes' or g == 'yes':
+while g == 'Yes' or g == 'yes'or g =='y':
     prov = input("do you have an account? ")
-    if prov == "yes" or prov == "Yes":
+    if prov == "yes" or prov == "Yes" or prov == "y":
         prov_id = input('Enter your id: ')
         if prov_id == 'exit':
             break
         for x in customers:
             if prov_id == x["id"]:
                 new_prods= input("Choice a product: ")
-                x["prods"].append(new_prods)
+                x["products"].append(new_prods)
                 with open("text.txt", 'w') as f:
-                    f.write(f"{customers}\n")
+                    f.write("yo")
                     f.close()
                 print(customers)
         else:
@@ -34,8 +34,8 @@ while g == 'Yes' or g == 'yes':
         customers.append(cust_new)
         print(customers)
         f=open("text.txt", 'w')
-        for cust_new in customers:
-             f.write(f"{cust_new}\n")
+        for cust in customers:
+             f.write("yo")
         f.close()
     elif prov == "exit":
         break
